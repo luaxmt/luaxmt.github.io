@@ -1,0 +1,17 @@
+####################### About #########################
+style: "style3 orient-left content-align-right image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+title : "Sobre"
+content : |
+  This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).
+  <br />
+  <br />
+  This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>). This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).
+  <br />
+  <br />
+  This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).
+button:
+  label : "Fale comigo"
+  link : "https://wa.me/5551999999999"
+  target: _blank
+image : "https://png.pngtree.com/png-clipart/20201106/ourmid/pngtree-original-watercolor-monstera-leaf-design-png-image_2404019.jpg 360w, https://png.pngtree.com/png-clipart/20201106/ourlarge/pngtree-original-watercolor-monstera-leaf-design-png-image_2404019.jpg 640w"
+

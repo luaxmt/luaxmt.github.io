@@ -6,7 +6,7 @@
         {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
         {{ with .button }}<ul class="actions stacked">
             <li>
-                <a href="{{ .link }}" target="{{ .target }}" class="button secondary large wide smooth-scroll-middle">
+                <a href="{{ .link }}" target="{{ .target }}" class="button secondary small smooth-scroll-middle">
                     {{ .label }}
                 </a>
             </li>
