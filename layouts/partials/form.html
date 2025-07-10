@@ -3,10 +3,24 @@
   <div class="inner">
     <section>
       <header>
-        <h3>Form</h3>
+        <h3>{{ .title }}</h3>
       </header>
       <div class="content">
-
+        <ul class="alt">
+          {{ range .contatos }}
+          <li>
+            <strong>{{ .title }}</strong>
+            {{ $value := .value}}
+            {{ with .link }}
+            <a href="{{ . }}">{{ $value }}</a>
+            {{ else }}
+            {{ .value }}
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="content">
         <form method="post" action="#">
           <div class="fields">
             <div class="field half">

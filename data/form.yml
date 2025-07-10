@@ -1,2 +1,11 @@
 ####################### Form #########################
 style: style1
+title: Contato
+
+contatos:
+  - title: 'Telefone/Whatsapp: ' 
+    link: 'https://wa.me/5551999999999'
+    value: +55 51 99601.0222
+  - title: 'E-mail: '
+    # link: 'mailto:luanaxmt@gmail.com'
+    value: luanaxmt@gmail.com

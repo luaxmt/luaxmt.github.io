@@ -4,13 +4,21 @@
         {{ with .title }}<h1>{{ . }}</h1>{{ end }}
         {{ with .subtitle }}<p class="major">{{ . | safeHTML }}</p>{{ end }}
         {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
-        {{ with .button }}<ul class="actions stacked">
+        <ul class="actions">
+            {{ range .buttons }}
+            {{ $link := .link}}
+            {{ $target := .target}}
+            {{ $icon := .icon}}
+            {{ with .label }}
             <li>
-                <a href="{{ .link }}" target="{{ .target }}" class="button secondary small smooth-scroll-middle">
-                    {{ .label }}
+                <a href="{{ $link }}" target="{{ $target }}" class="button secondary smooth-scroll-middle">
+                    {{ . }}
+                    {{ with $icon}}<i class="{{.}}"></i>{{end}}
                 </a>
             </li>
-        </ul>{{ end }}
+            {{ end }}
+            {{ end }}
+        </ul>
     </div>
     {{ with .image }}<div class="image">
         <img src="{{.}}" alt="Hugo Story" />

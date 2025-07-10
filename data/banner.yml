@@ -5,9 +5,13 @@ subtitle: |
   <strong>Psicóloga Clínica</strong> CRP 07/32645
 content : |
   This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).
-button:
-  label : "Fale comigo"
-  link : "https://wa.me/5551999999999"
-  target: _blank
+buttons:
+  - label: "Fale comigo"
+    link: "https://wa.me/5551999999999"
+    target: _blank
+  - label: "Mais"
+    link: "#about"
+    icon: fa-solid fa-arrow-down
+
 image : "images/banner.jpg"
 

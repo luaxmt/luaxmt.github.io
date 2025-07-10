@@ -1,5 +1,5 @@
 <!-- About -->
-<section class="banner {{ .style }}">
+<section id="about" class="banner {{ .style }}">
   <div class="content" style="position: relative;">
     {{ with .title }}<h1>{{ . }}</h1>{{ end }}
     {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
