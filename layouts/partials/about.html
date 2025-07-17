@@ -5,7 +5,9 @@
     {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
     <div class="text-background"></div>
   </div>
-  {{ with .image }}<div class="image" style="background-color: transparent;">
-    <img src="{{.}}" alt="Hugo Story" />
-  </div>{{end}}
+  {{ with .image }}
+  <div class="image" style="background-color: transparent;">
+    <img style="transform: scale(0.8);" src="{{.}}" alt="Hugo Story" />
+  </div>
+  {{end}}
 </section>
