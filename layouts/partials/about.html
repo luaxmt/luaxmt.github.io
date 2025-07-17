@@ -1,7 +1,7 @@
 <!-- About -->
 <section id="about" class="banner {{ .style }}">
   <div class="content" style="position: relative;">
-    {{ with .title }}<h1>{{ . }}</h1>{{ end }}
+    {{ with .title }}<h2>{{ . }}</h2>{{ end }}
     {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
     <div class="text-background"></div>
   </div>

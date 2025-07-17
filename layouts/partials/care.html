@@ -4,19 +4,17 @@
     <div class="index align-left">
       <section>
         <header>
-          <h3>{{ .pagetitle }}</h3>
+          <h2>{{ .pagetitle }}</h2>
         </header>
         <div class="content">
+          {{ range .atendimentos }}
           <dl>
-            <dt>{{ .title_1 }}</dt>
+            <dt>{{ .title }}</dt>
             <dd>
-              <p>{{ .text_1 }}</p>
-            </dd>
-            <dt>{{ .title_2 }}</dt>
-            <dd>
-              <p>{{ .text_2 }}</p>
+              <p>{{ .text }}</p>
             </dd>
           </dl>
+          {{ end }}
         </div>
       </section>
     </div>

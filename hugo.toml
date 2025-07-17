@@ -3,12 +3,14 @@
 ## -----------------------------------------------
 
 theme = "hugo-story"
+title = "Luana Schmitz"
+copyright = "{year}"
 
 ## -----------------------------------------------
 ## Publish
 ## -----------------------------------------------
 
-relativeURLs = true
+# relativeURLs = "true"
 #canonifyURLs = "true"
 
 # Local
@@ -19,18 +21,69 @@ publishDir = "public"
 #baseURL = "https://caressofsteel.github.io/demos/hugo/hugo-story/"
 #publishDir = "//centos/sites/hugodev/hugostory/"
 
-
 ## -----------------------------------------------
 ## Hugo Built-in Features
 ## -----------------------------------------------
 
 disableKinds = ["taxonomy", "section"]
-# googleAnalytics = "your-google-analytics-id"
+# googleAnalytics = "G-XXXXXXXXXX"
 
 ## -----------------------------------------------
 ## Site Parameters
 ## -----------------------------------------------
 
 [Params]
+description = "A (modular, highly tweakable) responsive one-page theme for Hugo"
+logo = "images/banner.jpg"
+favicon = true
 
 [Params.social]
+github = "https://github.com/caressofsteel/"
+twitter = "https://twitter.com/caressofsteel_"
+email = "caressofsteel@protonmail.com"
+instagram = "https://instagram.com"
+linkedin = "https://linkedin.com"
+telegram = "https://telegram.org"
+
+[Params.asset]
+fontawesome_css = ["css/fontawesome-all.min.css"]
+fontawesome_js = ["js/fontawesome-all.min.js"]
+
+## -----------------------------------------------
+## Menu Configuration
+## -----------------------------------------------
+
+[[menu.main]]
+name = "Início"
+url = "#home"
+weight = 1
+[menu.main.params]
+icon = "fa-solid fa-home"
+
+[[menu.main]]
+name = "Sobre"
+url = "#about"
+weight = 2
+[menu.main.params]
+icon = "fa-solid fa-user"
+
+[[menu.main]]
+name = "Cuidados"
+url = "#care"
+weight = 3
+[menu.main.params]
+icon = "fa-solid fa-heart"
+
+[[menu.main]]
+name = "Serviços"
+url = "#items"
+weight = 4
+[menu.main.params]
+icon = "fa-solid fa-list"
+
+[[menu.main]]
+name = "Contato"
+url = "#form"
+weight = 5
+[menu.main.params]
+icon = "fa-solid fa-envelope"

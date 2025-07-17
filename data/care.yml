@@ -4,8 +4,10 @@ style: "style1"
 pagetitle: Atendimento
 
 ####################### Points #########################
-title_1: Atentimendo presencial
-text_1: Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.
-
-title_2: Atentimendo online
-text_2: Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.
+atendimentos:
+  - title: Mulheres
+    text: Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.
+  - title: População Trans
+    text: Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum. 
+  - title: Interseccionalidade
+    text: Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum. 

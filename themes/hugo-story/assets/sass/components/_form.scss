@@ -181,6 +181,10 @@
 				content: '\f00c';
 			}
 		}
+
+		&.small {
+			transform: scale(.8)
+		}
 	}
 
 	input[type="checkbox"] {

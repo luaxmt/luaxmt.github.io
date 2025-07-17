@@ -1,0 +1,23 @@
+<!-- Navigation Menu -->
+<nav id="main-nav" class="main-nav">
+  <div class="nav-container">
+    <div class="nav-brand">
+      <a href="#banner" class="smooth-scroll-middle">{{ .Site.Title }}</a>
+    </div>
+    <ul class="nav-menu">
+      {{ range .Site.Menus.main }}
+      <li class="nav-item">
+        <a href="{{ .URL }}" class="nav-link smooth-scroll-middle">
+          {{ with .Params.icon }}<i class="{{ . }}"></i>{{ end }}
+          <span>{{ .Name }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    <div class="nav-toggle" id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
