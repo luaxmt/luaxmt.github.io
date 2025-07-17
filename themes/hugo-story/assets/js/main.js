@@ -59,6 +59,159 @@
 			$('.nav-menu').removeClass('active');
 		});
 
+	// Phone validation and checkbox validation
+		var $telephoneInput = $('#telephone');
+		var $telephoneError = $('#telephone-error');
+		var $phoneCheckbox = $('#phone');
+		var $phoneCheckboxError = $('#phone-checkbox-error');
+
+		// Phone validation function
+		function validatePhone(phone) {
+			// Remove all non-digit characters
+			var digits = phone.replace(/\D/g, '');
+			return digits.length > 7;
+			
+			// Check if it's a valid Brazilian phone number (10 or 11 digits)
+			// if (digits.length === 10 || digits.length === 11) {
+				// If 11 digits, first digit should be 9 (mobile) or 8 (landline)
+				if (digits.length === 11) {
+					return digits.charAt(2) === '9' || digits.charAt(2) === '8';
+				}
+				// If 10 digits, it's a landline
+				return true;
+			// }
+			return false;
+		}
+
+		// Format phone number as user types
+		$telephoneInput.on('input', function() {
+			var value = $(this).val();
+			var digits = value.replace(/\D/g, '');
+			
+			// Format the number
+			var formatted = '';
+			if (digits.length > 0) {
+				formatted = digits;
+			// 	formatted = '(' + digits.substring(0, 2);
+			// 	if (digits.length > 2) {
+			// 		formatted += ') ' + digits.substring(2, 7);
+			// 		if (digits.length > 7) {
+			// 			formatted += '-' + digits.substring(7, 11);
+			// 		}
+			// 	}
+			}
+			
+			$(this).val(formatted);
+			
+			// Validate and show/hide error
+			if (value.length > 0 && !validatePhone(value)) {
+				$telephoneError.show();
+				$(this).addClass('error');
+			} else {
+				$telephoneError.hide();
+				$(this).removeClass('error');
+			}
+			
+			// Check if phone checkbox validation is needed
+			validatePhoneCheckbox();
+		});
+
+		// Phone checkbox validation
+		function validatePhoneCheckbox() {
+			var isPhoneChecked = $phoneCheckbox.is(':checked');
+			var telephoneValue = $telephoneInput.val().trim();
+			var isTelephoneValid = telephoneValue.length > 0 && validatePhone(telephoneValue);
+			
+			if (isPhoneChecked && !isTelephoneValid) {
+				$phoneCheckboxError.show();
+				$phoneCheckbox.addClass('error');
+				return false;
+			} else {
+				$phoneCheckboxError.hide();
+				$phoneCheckbox.removeClass('error');
+				return true;
+			}
+		}
+
+		// Phone checkbox change event
+		$phoneCheckbox.on('change', function() {
+			validatePhoneCheckbox();
+		});
+
+		// Form submission validation
+		$('#contact-form').on('submit', function(e) {
+			var isPhoneChecked = $phoneCheckbox.is(':checked');
+			var telephoneValue = $telephoneInput.val().trim();
+			var isTelephoneValid = telephoneValue.length === 0 || validatePhone(telephoneValue);
+			
+			// If phone checkbox is checked, telephone must be filled and valid
+			if (isPhoneChecked && (!telephoneValue || !validatePhone(telephoneValue))) {
+				e.preventDefault();
+				$phoneCheckboxError.show();
+				$phoneCheckbox.addClass('error');
+				if (!telephoneValue) {
+					$telephoneInput.addClass('error').focus();
+				} else if (!validatePhone(telephoneValue)) {
+					$telephoneError.show();
+					$telephoneInput.addClass('error').focus();
+				}
+				return false;
+			}
+			
+			// If validation passes, allow form submission
+			return true;
+		});
+
+		// Email validation
+		function validateEmail(email) {
+			var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			return emailRegex.test(email);
+		}
+
+		var $emailInput = $('#email');
+		var $emailError = $('<span class="field-error">Por favor, insira um endereço de e-mail válido</span>').insertAfter($emailInput);
+		$emailError.hide();
+
+		$emailInput.on('blur', function() {
+			var emailValue = $(this).val().trim();
+			
+			if (emailValue && !validateEmail(emailValue)) {
+				$emailError.show();
+				$(this).addClass('error');
+			} else {
+				$emailError.hide(); 
+				$(this).removeClass('error');
+			}
+		});
+		
+		$nameInput = $('#name');
+		var $nameError = $('<span class="field-error">Por favor, insira um nome válido</span>').insertAfter($nameInput);
+		$nameError.hide();
+		
+		$nameInput.on('blur', function() {
+			var nameValue = $(this).val().trim();
+			
+			if (!nameValue.includes(' ')) {
+				$nameError.show();
+				$(this).addClass('error');
+			} else {
+				$nameError.hide(); 
+				$(this).removeClass('error');
+			}
+		});
+
+		// Add email validation to form submission
+		$('#contact-form').on('submit', function(e) {
+			var emailValue = $emailInput.val().trim();
+			
+			if (!emailValue || !validateEmail(emailValue)) {
+				e.preventDefault();
+				$emailError.show();
+				$emailInput.addClass('error').focus();
+				return false;
+			}
+		});
+
 	// Browser fixes.
 
 		// IE: Flexbox min-height bug.

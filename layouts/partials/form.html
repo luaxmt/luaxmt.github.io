@@ -6,7 +6,7 @@
         <h3>{{ .title }}</h3>
       </header>
       <div class="content">
-        <form method="post" action="#">
+        <form method="post" action="#" id="contact-form">
           <div class="fields">
             <div class="field half">
               <label for="name">Nome Completo</label>
@@ -17,36 +17,32 @@
               <input type="email" name="email" id="email" value="" required />
             </div>
             <div class="field half">
-              <label for="email">Telefone (Whatsapp)</label>
-              <input type="tel" name="phone" placeholder="(__) _____-____" />
+              <label for="telephone">Telefone (Whatsapp)</label>
+              <input type="tel" name="phone" id="telephone" />
+              <small class="field-error" id="telephone-error"
+                style="display: none; color: #e74c3c; font-size: 0.8rem; margin-top: 0.25rem;">Por favor, insira um
+                telefone válido</small>
             </div>
-            <!-- <div class="field">
-              <label for="department">Department</label>
-              <select name="department" id="department">
-                <option value="">- Category -</option>
-                <option value="1">Manufacturing</option>
-                <option value="2">Shipping</option>
-                <option value="3">Administration</option>
-                <option value="4">Human Resources</option>
-              </select>
-            </div> -->
             <div class="field">
               <label for="message">Mensagem</label>
               <textarea name="message" id="message" rows="6"></textarea>
             </div>
             <div class="field">
-              <label for="email">Como você prefere que eu entre em contato?</label>
+              <label for="contact-preferences">Como você prefere que eu entre em contato?</label>
             </div>
             <div class="field small-padding">
-              <input type="checkbox" id="email-checkbox" name="priority" class="small" />
+              <input type="checkbox" id="email-checkbox" name="contact_email" class="small" />
               <label for="email-checkbox">E-mail</label>
             </div>
             <div class="field small-padding">
-              <input type="checkbox" id="phone" name="priority" class="small" />
+              <input type="checkbox" id="phone" name="contact_phone" class="small" />
               <label for="phone">Telefone</label>
+              <small class="field-error" id="phone-checkbox-error"
+                style="display: none; color: #e74c3c; font-size: 0.8rem; margin-top: 0.25rem;">Selecione telefone como
+                opção de contato, você deve preencher o campo de telefone</small>
             </div>
             <div class="field small-padding">
-              <input type="checkbox" id="whatsapp" name="priority" class="small" />
+              <input type="checkbox" id="whatsapp" name="contact_whatsapp" class="small" />
               <label for="whatsapp">Whatsapp</label>
             </div>
             <!-- <div class="field half">

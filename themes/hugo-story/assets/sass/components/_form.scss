@@ -293,3 +293,15 @@
 	}
 
 	@include color-form;
+
+// Error state for phone checkbox
+input[type="checkbox"].error + label {
+  color: #e74c3c;
+}
+
+.field-error {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  display: block;
+}

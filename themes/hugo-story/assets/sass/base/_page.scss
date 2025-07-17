@@ -35,7 +35,7 @@
 		}
 
 	body {
-		background: _palette(bg);
+		background-color: _palette(bg);
 
 		// Stops initial animations until page loads.
 			&.is-preload {

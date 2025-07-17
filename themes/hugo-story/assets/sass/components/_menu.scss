@@ -41,8 +41,7 @@
       transition: color 0.3s ease;
 
       &:hover {
-        // color: _palette(accent2);
-        color: #6da562;
+        color: _palette(accent);
       }
     }
   }
@@ -52,7 +51,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 2rem;
+    gap: 0.8rem;
 
     @include breakpoint('<=medium') {
       display: none;
@@ -93,8 +92,8 @@
       }
 
       &:hover {
-        background: _palette(accent1);
-        color: white;
+        color: _palette(accent);
+        // color: white;
         transform: translateY(-2px);
       }
 
