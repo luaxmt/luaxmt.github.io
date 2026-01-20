@@ -2,12 +2,16 @@
 style: "style1 fullscreen orient-left content-align-right image-position-right onload-image-fade-in onload-content-fade-right"
 title : "Sobre"
 content : |
-  This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).
+  Olá! Sou a Luana. Sou <strong>psicóloga clínica</strong>, graduada pela Universidade Federal do Rio Grande do Sul (UFRGS), e especialista em Saúde Mental pelo Programa de Residência Multiprofissional da Universidade do Vale do Rio dos Sinos (Unisinos). Atualmente, encontro-me também mestranda pelo Programa de Pós-Graduação em Psicologia Social (UFRGS).
   <br />
+  Minha prática clínica se orienta pela <strong>psicanálise</strong> e se constrói a partir da escuta das vivências de <strong>mulheres</strong> e de pessoas <strong>LGBTQIAP+</strong>. O trabalho que realizo é atento a marcadores sociais como raça, classe, gênero, sexualidade, e às diversas interseccionalidades que atravessam a experiência de cada sujeito.
   <br />
-  This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>). This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).
+  Ao longo da minha trajetória, atuei nas políticas públicas em serviços multiprofissionais voltados à promoção do cuidado da população trans, travesti e não-binária, bem como suas comunidades e familiares. Essa experiência me possibilitou um contato próximo com questões sociais, legais e biomédicas relacionadas aos processos de afirmação de gênero, o que é refletido na minha prática clínica em consultório.
   <br />
+  Também sou membra-fundadora da Associação Projeto Gradiva, coletivo clínico feminista que oferece atendimento em saúde mental para mulheres em situação de violência de gênero.
   <br />
-  This is a <strong>Banner</strong> element, and it's generally used as an introduction or opening statement. You can customize its <span class="demo-controls">appearance with a number of modifiers</span>, as well as assign it an optional <code>onload</code> or <code>onscroll</code> transition modifier (<a href="#reference-banner">details</a>).
+  Tenho experiência no acompanhamento e condução de situações de crise, bem como no tratamento do luto, da ansiedade e da depressão. Mantenho-me em constante atualização profissional, buscando proporcionar um espaço terapêtico seguro, acolhedor e comprometido com  uma escuta ética, sensível e sem julgamentos.
+  <br />
+  Atendo como psicóloga em Porto Alegre (RS) e também na modalidade de atendimento psicológico online, acompanhando jovens a partir dos 14 anos, adultos e idosos.
 image : "images/lavanda.png"
 
