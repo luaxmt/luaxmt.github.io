@@ -5,9 +5,9 @@ pagetitle: Atendimentos
 
 ####################### Points #########################
 atendimentos:
-  - title: Mulheres
-    text: Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum.
-  - title: População Trans
-    text: Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum. 
-  - title: Interseccionalidade
-    text: Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent fringilla quis tincidunt felis sagittis eget tempus euismod. Ante ipsum primis vestibulum. 
+  - title: Como entrar em contato?
+    text: Se você tiver interesse em iniciar um acompanhamento, pode me escrever uma mensagem breve, sem necessidade de formalidade. Basta indicar que deseja iniciar um atendimento. A partir desse contato, marcamos uma conversa inicial para avaliar a possibilidade de início do processo e esclarecer dúvidas.
+  - title: Como funciona o início da análise?
+    text: Não é esperado que você tenha clareza sobre a sua demanda clínica. Muitas vezes, ela se constrói a partir da própria possibilidade de falar sobre um incômodo, um impasse ou algo que se repete. Nesse primeiro encontro, você pode falar livremente sobre sua história e o que te mobiliza a buscar atendimento. Também faremos combinações iniciais sobre o enquadre clínico, incluindo formato e condições do trabalho.
+  - title: Qual o público atendido?
+    text: Atendo jovens, adultos e idosos. Tenho como foco de trabalho e pesquisa as vivências de mulheres e de pessoas LGBTQIAP+, mantendo abertura para qualquer pessoa interessada em um espaço terapêutico de escuta e construção de sentido. No acompanhamento de adolescentes, a escuta de responsáveis pode ser necessária em alguns momentos do processo.
