@@ -5,7 +5,7 @@ style: "style1 medium onscroll-fade-in"
 items:
   # feature item loop
   - name : "Modalidade"
-    content : "Atendimentos presenciais em Porto Alegre–RS, no bairro Petrópolis, ou online, por videochamada ou ligação telefônica."
+    content : "Atendimentos presenciais em Porto Alegre (RS), no bairro Petrópolis, ou online, por videochamada ou ligação telefônica."
     style : "solid style2 major fa-location-dot"
 
   # feature item loop
