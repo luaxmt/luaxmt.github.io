@@ -4,16 +4,16 @@
 style: "style1 medium onscroll-fade-in"
 items:
   # feature item loop
-  - name : "One"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit."
+  - name : "Modalidade"
+    content : "Atendimentos presenciais em Porto Alegre–RS, no bairro Petrópolis, ou online, por videochamada ou ligação telefônica."
     style : "style2 major fa-face-smile"
 
   # feature item loop
-  - name : "Two"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit."
+  - name : "Frequência"
+    content : "Definida a partir de cada caso e da condução do processo terapêutico. Em geral, os atendimentos são semanais, podendo ser ajustados conforme a necessidade clínica."
     style : "solid style2 major fa-save"
     
   # feature item loop
-  - name : "Three"
-    content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit."
+  - name : "Sigilo e vínculo terapêutico"
+    content : "O sigilo profissional é um princípio ético fundamental da prática clínica. A confidencialidade do que é compartilhado em sessão é parte do que sustenta um espaço de fala seguro, no qual é possível elaborar questões com liberdade."
     style : "solid style2 major fa-chart-bar"
